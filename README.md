@@ -16,11 +16,15 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 ## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Run `ng test` to execute the unit tests via [jasmine](https://jasmine.github.io/tutorials/your_first_suite) and [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## Running documentacion
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Execute the doc via [Compodoc](https://compodoc.app/)
+
+Build `npm run compodoc:build`.
+
+Run `npm run compodoc:serve`.
 
 ## Further help
 

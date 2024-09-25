@@ -1,0 +1,41 @@
+
+<form [formGroup]="profileForm" class="form-container" (ngSubmit)="onSubmit()">
+
+  <h3>{{title}}</h3>
+
+  <label for="firstname">➡️ First Name</label>
+  <input type="text" id="firstname" name="firstname" formControlName="firstname" placeholder="Your name">
+  <span class="error" *ngIf="profileForm.get('firstname')?.errors?.['required']">
+    Campo requerido
+  </span>
+
+  <label for="lastname">➡️ Last Name</label>
+  <input type="text" id="lastname" name="lastname" formControlName="lastname" placeholder="Your last name">
+  <span class="error" *ngIf="profileForm.get('lastname')?.errors?.['required']">
+    Campo requerido
+  </span>
+
+  <label for="email">➡️ Email</label>
+  <input type="text" id="email" name="email" formControlName="email" placeholder="Your email">
+  <span class="error" *ngIf="profileForm.get('email')?.errors?.['required']">
+    Campo requerido
+  </span>
+
+  <div class="gender-label">
+    <label>➡️ Gender</label>
+    <input type="radio" value="male" id="gender-male" name="gender" formControlName="gender"> Male
+    <input type="radio" value="female" id="gender-female" name="gender" formControlName="gender"> Female
+  </div>
+
+  <label for="country">🌏 Country</label>
+  <select id="country" name="country" formControlName="country">
+    <option value="1" value>UK</option>
+    <option value="2">USA</option>
+    <option value="3">Argentina</option>
+    <option value="4">Brasil</option>
+    <option value="4">Chile</option>
+  </select>
+
+  <button type="submit">Submit</button>
+
+</form>
