@@ -92,11 +92,22 @@
 <p>Run <code>ng build</code> to build the project. The build artifacts will be stored in the <code>dist/</code> directory.</p>
 <h2>Running unit tests</h2>
 <p>Run <code>ng test</code> to execute the unit tests via <a href="https://jasmine.github.io/tutorials/your_first_suite">jasmine</a> and <a href="https://karma-runner.github.io">Karma</a>.</p>
-<h2>Running documentacion</h2>
+<h2>Documentation</h2>
 <p>Execute the doc via <a href="https://compodoc.app/">Compodoc</a></p>
-<p>Build <code>npm run compodoc:build</code>.</p>
-<p>Run <code>npm run compodoc:serve</code>.</p>
-<h2>Further help</h2>
+<b>Example :</b><div><pre class="line-numbers"><code class="language-none">Installation
+ $ npm install -g &#64;compodoc/compodoc
+ # Create a file named tsconfig.doc.json, containing &quot;include&quot;: [&quot;src/**/*.ts&quot;]
+ # Run compodoc in your project (generated with Angular CLI for example) and serve it
+ $ compodoc -p tsconfig.doc.json -s
+
+ Build
+ $ npm run doc:build
+
+ Run
+ $ npm run doc:serve
+
+ Build and Run
+ $ npm run doc:build-serve</code></pre></div><h2>Further help</h2>
 <p>To get more help on the Angular CLI use <code>ng help</code> or go check out the <a href="https://angular.io/cli">Angular CLI Overview and Command Reference</a> page.</p>
 
 

@@ -18,14 +18,25 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 Run `ng test` to execute the unit tests via [jasmine](https://jasmine.github.io/tutorials/your_first_suite) and [Karma](https://karma-runner.github.io).
 
-## Running documentacion
+## Documentation
 
 Execute the doc via [Compodoc](https://compodoc.app/)
+```
+Installation
+ $ npm install -g @compodoc/compodoc
+ # Create a file named tsconfig.doc.json, containing "include": ["src/**/*.ts"]
+ # Run compodoc in your project (generated with Angular CLI for example) and serve it
+ $ compodoc -p tsconfig.doc.json -s
 
-Build `npm run compodoc:build`.
+ Build
+ $ npm run doc:build
 
-Run `npm run compodoc:serve`.
+ Run
+ $ npm run doc:serve
 
+ Build and Run
+ $ npm run doc:build-serve
+```
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
